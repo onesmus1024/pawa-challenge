@@ -1,0 +1,44 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pawa-challenge-frontend
+  labels:
+    app: pawa-challenge-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pawa-challenge-frontend
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  minReadySeconds: 5
+  template:
+    metadata:
+      labels:
+        app: pawa-challenge-frontend
+    spec:
+      containers:
+      - name: pawa-challenge-frontend
+        image: <IMAGE_NAME>:<TAG>
+        ports:
+        - containerPort: 3000
+        
+      
+
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-pawa-challenge-frontend
+spec:
+  ports:
+    - name: http
+      protocol: TCP
+      port: 3000
+      targetPort: 3000
+  selector:
+    app: pawa-challenge-frontend
