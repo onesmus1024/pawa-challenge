@@ -5,13 +5,13 @@ FROM node:18-alpine
 WORKDIR /app
 
 # Copy package.json and package-lock.json
-COPY package*.json ./
+COPY /weather-frontend/package*.json /app/
 
 # Install dependencies
 RUN npm install --force
 
 # Copy the rest of the application code
-COPY . .
+COPY /weather-frontend /app
 
 # Build the Next.js application
 RUN npm run build
