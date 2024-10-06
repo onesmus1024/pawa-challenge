@@ -16,7 +16,7 @@ const WeatherSearch: React.FC = () => {
         setError(''); // Clear previous errors
         try {
             const response = await fetch(
-                `http://127.0.0.1:8000/?city=${city}&units=${unit}`
+                `https://backend.firstchoicedomestic.com/?city=${city}&units=${unit}`
             );
 
             if (!response.ok) {
