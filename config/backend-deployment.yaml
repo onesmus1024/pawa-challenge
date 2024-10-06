@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
       - name: pawa-challenge-backend
-        image: nexttechglobe/pawa-challenge-backend:lastest
+        image: nexttechglobe/pawa-challenge-backend:latest
         ports:
         - containerPort: 8000
         env:
