@@ -77,7 +77,7 @@ jobs:
     - name: Update deployment file
       run: |
         sed -i "s|<IMAGE_NAME>:<TAG>|nexttechglobe/pawa-challenge-frontend:latest|g" $GITHUB_WORKSPACE/config/frontend-deployment.yaml
-        cat $GITHUB_WORKSPACE/config/deploy-frontend.yaml
+        cat $GITHUB_WORKSPACE/config/frontend-deployment.yaml
     - name: Image path
       run : |
           echo  ${{ secrets.DOCKER_USERNAME }}/pawa-challenge-frontend:latest
