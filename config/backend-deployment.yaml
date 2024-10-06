@@ -53,6 +53,6 @@ spec:
     - name: http
       protocol: TCP
       port: 8000
-      targetPort: 8000
+      targetPort: 80
   selector:
     app: pawa-challenge-backend
