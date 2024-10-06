@@ -1,4 +1,4 @@
-name: Deploy NextTechGlobe Webhosting Frontend
+name: Deploy Frontend
 on:
   workflow_dispatch:
   push:
