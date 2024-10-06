@@ -3,9 +3,9 @@ weather app that contains both frontend and backend and it live on "https://firs
 
 <!-- images -->
 
-[weather-app]: ./image1.png
+[weather-app](https://github.com/onesmus1024/pawa-challenge/blob/main/image1.png)
 
-[weather-app]: ./image2.png
+[weather-app](https://github.com/onesmus1024/pawa-challenge/blob/main/image2.png)
 ## Features
 
 - Get the current weather for a city
