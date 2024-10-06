@@ -1,6 +1,18 @@
 # pawa-challenge
 weather app that contains both frontend and backend and it live on "https://firstchoicedomestic.com/"
 
+<!-- images -->
+
+[weather-app]: ./image1.png
+
+[weather-app]: ./image2.png
+## Features
+
+- Get the current weather for a city
+- Get the weather forecast for a city
+- Get the weather for a city for the next 5 days in 3-hour intervals
+
+
 
 
 ## Backend
