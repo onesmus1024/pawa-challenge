@@ -112,7 +112,8 @@ const WeatherSearch: React.FC = () => {
                                         {weatherData.weather[0].description}
                                     </p>
                                     <p className="mt-2 text-lg">
-                                        {dateFormatter(new Date().toString())} <br />
+
+                                        {dateFormatter(new Date().toISOString())} -
                                         {searchedCity}
                                     </p>
                                 </div>
@@ -128,7 +129,7 @@ const WeatherSearch: React.FC = () => {
                                             key={forecast.dt}
                                         >
                                             <h3 className="text-lg font-medium">
-                                                {dateFormatter(new Date(forecast.dt_txt).toString())}
+                                                {dateFormatter(forecast.dt_txt)}
                                             </h3>
                                             <img
                                                 src={`http://openweathermap.org/img/w/${forecast.weather[0].icon}.png`}
